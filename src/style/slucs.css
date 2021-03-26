@@ -1,0 +1,24 @@
+ .headshot-caption {
+   	line-height: 1.25;
+ }
+  
+.headshot {
+ 	width: 150px;
+ }
+
+:target:before {
+  content:"";
+  display:block;
+  height:60px; /* fixed header height*/
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+.citation {
+  padding-left: 50px ;
+  text-indent: -50px ;
+  padding-bottom: 15px;
+}
+
+.cmbx-10{ font-weight: bold;}
+.cmti-10{ font-style: italic;}
+
