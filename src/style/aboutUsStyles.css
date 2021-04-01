@@ -1,0 +1,39 @@
+.float-container {
+  padding: 20px;
+  background-color: #323030;
+  height: 35%;
+  margin-bottom: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body,
+html {
+  height: 100%;
+}

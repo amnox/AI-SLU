@@ -5,7 +5,7 @@ class SideNavigation extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="sidebar"></div>
+        <div>SIDE BAR</div>
       </React.Fragment>
     );
   }
