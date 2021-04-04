@@ -1,3 +1,14 @@
 .outer-wrapper{
     width: 100%;
+    margin: auto;
+
+}
+.content-wrapper{
+    width: 68%;
+    margin:auto;
+    display: flex;
+}
+.main-content{
+    width:75%;
+    float: left;
 }

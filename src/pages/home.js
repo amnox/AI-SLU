@@ -6,9 +6,9 @@ class Home extends React.Component {
     return (
       <BigDiv>
         <div className="home">
-          <div className="home-banner"></div>
-          <div className="roadmap"></div>
-          <div className="leadership"></div>
+          <div className="home-banner">Banner</div>
+          <div className="roadmap">Roadmap</div>
+          <div className="leadership">Leader</div>
         </div>
       </BigDiv>
     );
