@@ -6,16 +6,23 @@ class AboutUsContent extends Component {
   render() {
     return (
       <div>
-        <h1 className="fonts">About</h1>
+        <h1
+          className="fonts"
+          style={{ paddingTop: 50, paddingBottom: 20, fontSize: 40 }}
+        >
+          About
+        </h1>
 
-        <h6 className="fonts">
-          THE MISSION OF AI@SLU IS TO LEVERAGE SLU STRENGTH AND COMPETENCIES TO
-          PROVIDE SUPERIOR EDUCATION, RESEARCH, AND SERVICES TO THE COMMUNITY ON
-          KNOWLEDGE RELATED TO ARTIFICIAL INTELLIGENCE
+        <h6 className="fonts" style={{ paddingBottom: 35 }}>
+          The mission of AI@SLU is to leverage SLU strength and competencies to
+          provide superior education, research, and services to the community on
+          knowledge related to Artificial Intelligence.
         </h6>
 
-        <h1 className="fonts">2019 BIG IDEAS PLANNING GRANT WINNER</h1>
-        <p className="fonts">
+        <h1 className="fonts" style={{ paddingBottom: 10 }}>
+          2019 BIG IDEAS PLANNING GRANT WINNER
+        </h1>
+        <p className="fonts" style={{ paddingBottom: 40 }}>
           A group of SLU faculty and researchers from various disciplines and
           with a mutual research interest in artificial intelligence came
           together in February-March 2019, to discuss whether coordinated growth
