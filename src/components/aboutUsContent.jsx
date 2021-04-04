@@ -5,38 +5,53 @@ class AboutUsContent extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <div className="float-container">
-          <div
-            className="float-child"
+      <div>
+        <h1 className="fonts">About</h1>
+
+        <h6 className="fonts">
+          THE MISSION OF AI@SLU IS TO LEVERAGE SLU STRENGTH AND COMPETENCIES TO
+          PROVIDE SUPERIOR EDUCATION, RESEARCH, AND SERVICES TO THE COMMUNITY ON
+          KNOWLEDGE RELATED TO ARTIFICIAL INTELLIGENCE
+        </h6>
+
+        <h1 className="fonts">2019 BIG IDEAS PLANNING GRANT WINNER</h1>
+        <p className="fonts">
+          A group of SLU faculty and researchers from various disciplines and
+          with a mutual research interest in artificial intelligence came
+          together in February-March 2019, to discuss whether coordinated growth
+          in Artificial Intelligence (AI) is both a strength that SLU can build
+          upon as well as an area of need that can help expand research efforts
+          in a variety of disciplines. The group recognizes that the ubiquity of
+          AI and the remarkable advances that it has brought and will continue
+          to bring to such a variety of domains makes it a critical focal point
+          for further research. Also, the rapid growth of AI raises an enormous
+          number of ethical, economical, policy, and legal questions that must
+          be addressed. For both of these reasons, the group envision creating a
+          interdisciplinary entity for developing, testing and implementing
+          Artificial Intelligence at Saint Louis University as a compelling
+          strategic initiative, allowing both for the advancement of research
+          across a wide swath of domains, and leveraging our strengths in
+          computer science, engineering, humanities, ethics, health, business,
+          law and policy, and our Jesuit mission. The discussion led to two Big
+          Idea proposals: Artificial Intelligence at Saint Louis University and
+          Smart Echocardiography. The two proposals were combined into AI@SLU to
+          strengthen SLU's capability for artificial intelligence in various
+          disciplines.
+        </p>
+        <div style={{ textAlign: "center" }}>
+          <a
+            className="fonts"
+            href="https://www.slu.edu/news/announcements/2019/may/big-ideas-grant-winners.php"
+            target="blank"
             style={{
-              fontFamily: "oswald",
               fontSize: 50,
-              textAlign: "center",
-              color: "white",
+              textDecoration: "underline",
             }}
           >
-            ABOUT
-            <br />
-            AI@SLU
-          </div>
-          <div
-            className="float-child"
-            style={{ color: "white", fontFamily: "Open Sans" }}
-          >
-            <i>
-              <b>
-                THE MISSION OF AI@SLU IS TO LEVERAGE <br /> SLU STRENGTH AND
-                COMPETENCIES TO
-                <br /> PROVIDE SUPERIOR EDUCATION,
-                <br /> RESEARCH, AND SERVICES TO THE <br />
-                COMMUNITY ON KNOWLEDGE RELATED <br />
-                TO ARTIFICIAL INTELLIGENCE
-              </b>
-            </i>
-          </div>
+            ANNOUNCEMENT
+          </a>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
