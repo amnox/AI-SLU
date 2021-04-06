@@ -2,3 +2,39 @@
     width:25%;
     float: left;
 }
+
+.side-navigation-wrapper{
+    padding: 5px 25px 0px 11px;
+}
+
+.item-container{
+    padding: 8px 5px 8px 5px;
+    background: #003da5;
+    margin: 0px 0px 3px 0px;
+}
+
+.item-container a{
+    color: white;
+    margin-left: 5%;
+}
+
+.sidenav-dropdown-icon{
+    color: white;
+    margin-right: 5%;
+    float: right;
+}
+
+.sub-item-container{
+    background: #f0f0f0;
+    padding: 8px 5px 8px 5px;
+    margin: 0px 0px 3px 0px;
+}
+
+.sub-item-container a{
+    color: #003da5;
+    margin-left: 5%;
+}
+
+.sub-item-container a:link {
+    text-decoration: none;
+  }

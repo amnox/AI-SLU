@@ -1,0 +1,102 @@
+.home{
+    margin-top: 1%;
+}
+.home-banner{
+    padding: 3% 5% 2% 5%;
+    display: inherit;
+    background: url(../../images/impression-header.png);
+    height: 310px;
+}
+
+.home-banner-image{
+    display: inherit;
+    float: left;
+    width: max-content;
+}
+
+.home-banner-image img{
+    width: 260px;
+}
+
+.home-banner-paragraph{
+    width: 580px;
+    float: left;
+    font-size: larger;
+    color: white;
+    padding-top: inherit;
+}
+
+.roadmap-left{
+
+    margin-top: 3%;
+
+    width: 100%;
+    display: inherit;
+    float: left;
+}
+
+.roadmap-left > p{
+    font-weight: 600;
+    margin-bottom: 2%;
+    font-size: 40px;
+}
+
+.roadmap-left > ul{
+    font-size: 25px;
+    padding-left: 18px;
+}
+
+.roadmap-right{
+    width: 100%;
+    display: inherit;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.roadbox{
+    margin: 1px;
+    float: left;
+    width: 33%;
+}
+
+.roadbox-header{
+    font-size: larger;
+    padding: 2%;
+    text-align: center;
+    background: #003da5;
+    color: #f0f0f0;
+}
+
+.roadbox-text{
+    background: #f0f0f0;
+    height: 300px;
+}
+
+.lwrap{
+
+    padding: 1%;
+    float: left;
+    width: 20%;
+}
+.lbox{
+    text-align: center;
+
+}
+.leadership{
+    float: left;
+    width: 100%;
+}
+
+.limg{
+    height: 199px;
+    width: 100%;
+    overflow: hidden;}
+
+.lname > a{
+    font-size: larger;
+}
+
+.loffice{
+    margin-top: 2%;
+    font-size: medium;
+}
