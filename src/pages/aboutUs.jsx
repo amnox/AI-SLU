@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AboutUsBody from "../components/aboutUsBody";
+import AboutUsContent from "../components/aboutUsContent";
 import "../style/aboutUsStyles.css";
 import BigDiv from "../components/bigDiv";
 
@@ -8,7 +8,7 @@ class AboutUs extends Component {
   render() {
     return (
       <BigDiv>
-        <AboutUsBody />
+        <AboutUsContent />
       </BigDiv>
     );
   }
