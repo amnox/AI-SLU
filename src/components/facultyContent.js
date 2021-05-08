@@ -1,3 +1,4 @@
+/*
 import React, { Component } from "react";
 import {BACKEND_URL} from '../constants'
 
@@ -49,6 +50,38 @@ class FacultyContent extends Component {
             );
         }
     }
+}
+
+export default FacultyContent;
+*/
+
+import { Component } from "react";
+
+class Entry extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const item = this.props.item;
+    return <p className="faculty-item">{item.author}</p>;
+  }
+}
+
+class FacultyContent extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const items = this.props.items;
+    return (
+      <div className="faculty-container">
+        {items.map((item) => (
+          <Entry key={item._id} item={item} />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default FacultyContent;
