@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {BACKEND_URL} from '../constants'
 
 class FacultyContent extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class FacultyContent extends Component {
         };
     }
     componentDidMount() {
-        fetch("https://localhost:4000/faculty")
+        fetch(BACKEND_URL+"faculty")
         .then(res => res.json())
         .then(
             (result) => {
@@ -27,9 +28,7 @@ class FacultyContent extends Component {
                 });
             }
         )
-        
     }
-    
 
     render() {
         console.log(this.state);
