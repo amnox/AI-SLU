@@ -63,7 +63,7 @@ class Entry extends Component {
   }
   render() {
     const item = this.props.item;
-    return <p className="faculty-item">{item.author}</p>;
+    return <p className="faculty-item">{item.firstname}</p>;
   }
 }
 
@@ -77,7 +77,7 @@ class FacultyContent extends Component {
     return (
       <div className="faculty-container">
         {items.map((item) => (
-          <Entry key={item._id} item={item} />
+          <Entry key={item.lastname} item={item} />
         ))}
       </div>
     );
