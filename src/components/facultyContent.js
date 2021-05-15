@@ -55,7 +55,7 @@ class FacultyContent extends Component {
 export default FacultyContent;
 */
 
-import { Component } from "react";
+import React, { Component } from "react";
 
 class Entry extends Component {
   constructor(props) {
@@ -63,7 +63,12 @@ class Entry extends Component {
   }
   render() {
     const item = this.props.item;
-    return <p className="faculty-item">{item.firstname}</p>;
+    return (
+      <p className="faculty-item">
+        {item.firstname} {item.lastname}, {item.department}
+        {item.email} {item.number}
+      </p>
+    );
   }
 }
 
@@ -76,6 +81,7 @@ class FacultyContent extends Component {
     const items = this.props.items;
     return (
       <div className="faculty-container">
+        <h1>Faculty</h1>
         {items.map((item) => (
           <Entry key={item.lastname} item={item} />
         ))}
