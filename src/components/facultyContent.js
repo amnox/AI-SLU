@@ -12,10 +12,15 @@ class Entry extends Component {
         <div style={{ fontSize: 30, fontWeight: "bold" }}>
           {item.firstname} {item.lastname}
         </div>
-        {item.department}
-        {"       "}
-        {item.email}
-        {"       "} {item.number}
+        <div>
+          {item.department}
+        </div>
+        <div>
+          {item.email}
+        </div>
+        <div style={{borderBottom: "3px solid rgb(212, 212, 212)"}}>
+          {item.number}
+        </div>
       </div>
     );
   }
@@ -39,10 +44,10 @@ class FacultyContent extends Component {
       );
     } else if (this.state.department == "Engineering") {
       var items = items_master.filter(
-        (item) => item.department == "Engineering"
+        (item) => item.department == "Parks College of Engineering, Aviation and Technology"
       );
     } else if (this.state.department == "Business") {
-      var items = items_master.filter((item) => item.department == "Business");
+      var items = items_master.filter((item) => item.department == "School of Business");
     } else if (this.state.department == "Health") {
       var items = items_master.filter((item) => item.department == "Health");
     }
@@ -51,50 +56,51 @@ class FacultyContent extends Component {
       <React.Fragment>
         <div className="faculty-container">
           <h1>Faculty</h1>
+          <Button
+            onClick={() => {
+              this.setState({ department: "all" });
+            }}
+            variant="contained"
+          >
+            All Departments
+          </Button>
+          <Button
+            onClick={() => {
+              this.setState({ department: "Computer Science" });
+            }}
+            variant="contained"
+          >
+            Computer Science
+          </Button>
+          <Button
+            onClick={() => {
+              this.setState({ department: "Engineering" });
+            }}
+            variant="contained"
+          >
+            Engineering
+          </Button>
+          <Button
+            onClick={() => {
+              this.setState({ department: "Business" });
+            }}
+            variant="contained"
+          >
+            Business
+          </Button>
+          <Button
+            onClick={() => {
+              this.setState({ department: "Health" });
+            }}
+            variant="contained"
+          >
+            Health
+          </Button>
           {items.map((item) => (
             <Entry key={item._id} item={item} />
           ))}
         </div>
-        <Button
-          onClick={() => {
-            this.setState({ department: "all" });
-          }}
-          variant="contained"
-        >
-          All Departments
-        </Button>
-        <Button
-          onClick={() => {
-            this.setState({ department: "Computer Science" });
-          }}
-          variant="contained"
-        >
-          Computer Science
-        </Button>
-        <Button
-          onClick={() => {
-            this.setState({ department: "Engineering" });
-          }}
-          variant="contained"
-        >
-          Engineering
-        </Button>
-        <Button
-          onClick={() => {
-            this.setState({ department: "Business" });
-          }}
-          variant="contained"
-        >
-          Business
-        </Button>
-        <Button
-          onClick={() => {
-            this.setState({ department: "Health" });
-          }}
-          variant="contained"
-        >
-          Health
-        </Button>
+        
       </React.Fragment>
     );
   }
