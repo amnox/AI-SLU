@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import BigDiv from '../components/bigDiv';
 import Publication from '../components/publication'
 import {BACKEND_URL} from '../constants'
+import './styles/publication.css'
+
 class Publications extends Component {
   constructor(props) {
     super(props);
@@ -43,6 +45,7 @@ class Publications extends Component {
     } else {
       return (
         <BigDiv>
+          
           <Publication items={items}></Publication>
         </BigDiv>
       );

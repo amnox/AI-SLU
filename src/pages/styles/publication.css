@@ -1,0 +1,14 @@
+.publication-container{
+    padding-top: 2%;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+.publication-item{
+    text-align: justify;
+    margin: 2% 0 2% 0;
+    /* text-decoration-line: underline; */
+    text-justify: distribute;
+}
