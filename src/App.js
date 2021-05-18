@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import AboutUs from "./pages/aboutUs";
 import Faculty from "./pages/faculty";
 import Publications from "./pages/publications";
+import Events from "./pages/events";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/publications">
           <Publications />
+        </Route>
+        <Route path="/events">
+          <Events />
         </Route>
       </Switch>
     </Router>

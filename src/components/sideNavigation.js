@@ -46,25 +46,42 @@ function SideNavigation() {
       isParent:false,
       children:[],
       value:"Home",
-      url:""
+      url:"/"
     },
     "events":{
       isParent:true,
       value:"Events",
       url:"/events",
       children:[
-        {value:"Contents",url:""},
-        {value:"Seminars",url:""},
-        {value:"Tutorial",url:""}
+        {value:"Contents",url:"/events?type=contest"},
+        {value:"Seminars",url:"/events?type=seminar"},
+        {value:"Tutorial",url:"/events?type=tutorial"}
       ]
-    }
+    },
+    "faculty":{
+      isParent:false,
+      children:[],
+      value:"Faculty",
+      url:"/faculty"
+    },
+    "publications":{
+      isParent:false,
+      children:[],
+      value:"Publications",
+      url:"/publications"
+    },
+    "about":{
+      isParent:false,
+      children:[],
+      value:"About Us",
+      url:"/aboutus"
+    },
   }
   let menuItems = []
   for(let item in menu){
         menuItems.push(NavItem(menu[item]))
   }
   
-  console.log(menuItems)
   return (
     <div className="side-navigation">
       <div className="side-navigation-wrapper">

@@ -1,1 +1,2 @@
-export var BACKEND_URL = 'http://localhost:4000/'
+export var BACKEND_URL = 'http://54.167.116.221/'
+//http://54.167.116.221/

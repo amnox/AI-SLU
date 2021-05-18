@@ -1,0 +1,75 @@
+.markdown{
+    margin-top: 2%;
+    box-shadow: 15px 13px #0e04a9;
+    border: 1px solid black;
+    width: 100%;
+    float: left;
+    resize: both;
+    overflow: auto;
+    height: 200px;
+    font-size: 86% !important;
+}
+
+.event-item{
+    float: left;
+    margin: 2% 0;
+    display: block;
+    width: 100%;
+}
+/*
+.event-item::after{
+    content: "-";
+    display: block;
+    height: 4px;
+    background: #00000073;
+    width: 22%;
+    left: 100%;
+    top: calc(50% - 2px);
+}*/
+
+.event-name{
+    font-size: 33px;
+    margin: 2% 0;
+}
+.event-name span{
+    left: -22px;
+    position: relative;
+}
+
+.event-timings{
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.event-timings p{
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.filter-dropdown{
+        padding: 4px;
+    border: 1px solid black;
+    width: 15%;
+    margin: 0 6px 0 0;
+}
+
+
+
+.dropdowns{
+    margin: 2% 0;
+    width: 100%;
+    display: block;
+    float: left;
+    
+}
+
+.events-container{
+    display: block;
+    padding: 2% 0;
+    float: left;
+    width: 100%;
+}
